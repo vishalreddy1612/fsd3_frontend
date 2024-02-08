@@ -28,7 +28,7 @@ function App() {
       //console.log(data);
 
       // USING BACK END Server
-     console.log("env"+process.env.REACT_APP_BACKEND_URL);
+     console.log("env=="+process.env.REACT_APP_BACKEND_URL);
      let response = await axios.get(process.env.REACT_APP_BACKEND_URL+"houses");
      console.log(response);
      setHouseData(response.data);
